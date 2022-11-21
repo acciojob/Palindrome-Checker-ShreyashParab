@@ -1,21 +1,19 @@
 // complete the given function
 
 function palindrome(str){
-  function isPalindrome(str){
-  var strRev=''
-for(let i = str.length-1 ; i>=0;i--)
-{
- strRev += str[i]
-}
+   var strRev=''
+  for(let i = str.length-1 ; i>=0;i--)
+  {
+    strRev += str[i]
+  }
 
  if(str.toUpperCase() == strRev.toUpperCase())
    {
-      document.write('true')
+      return true
    }
  else{
-      document.write('false')
+      return false
    }
 }
   
-Palindrome('raceCAR')
 module.exports = palindrome
